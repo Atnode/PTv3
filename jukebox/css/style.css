@@ -45,7 +45,7 @@
      padding:21px 0;
 }
  #plList li:hover {
-     background-color:#4d5158;
+     background-color:#008eff;
 	 color:#ffffff;
 }
  .plItem {
@@ -71,7 +71,7 @@
      top:0;
 }
  .plSel, .plSel:hover {
-     background-color:#4d5158;
+     background-color:#008eff;
      color:#fff;
      cursor:default !important;
 }
@@ -127,7 +127,7 @@
 
 .plyr__progress--played, .plyr__volume--display {
 	z-index: 1;
-	color: #4d5158;
+	color: #008eff;
 	background: 0 0;
 	-webkit-transition: none;
 	transition: none;
