@@ -30,9 +30,9 @@ $nom = "Planète Toad";
       <link href="/assets/css/style.css" rel="stylesheet">	  
 	  
 	  
-	  <script src="/assets/js/jquery.min.js" type="text/javascript"></script>
-	  <script src="/assets/js/bootstrap.min.js" type="text/javascript"></script>
-	  <script src="/assets/js/dropdown.js" type="text/javascript"></script>
+	  <script src="/assets/js/jquery.min.js"></script>
+	  <script src="/assets/js/bootstrap.min.js"></script>
+	  <script src="/assets/js/dropdown.js"></script>
 	  <?php if ($titre == "Jukebox") {echo '<link href="/jukebox/css/style.css" rel="stylesheet">';}?>
 	  <?php if ($titre == "Jukebox") {echo '<link href="/jukebox/css/plyr.css" rel="stylesheet">';}?>
 	  

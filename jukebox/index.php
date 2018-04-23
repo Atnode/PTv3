@@ -36,6 +36,7 @@ include_once($_SERVER['DOCUMENT_ROOT']). '/assets/includes/header.php';
 			<p class="center">Musiques composées par <a href="https://www.youtube.com/user/faloux">Faloux/DeepInfinity</a>.</p>
     </div>
 </section>
+</div>
 
 	
 <?php include($_SERVER['DOCUMENT_ROOT']). '/assets/includes/footer.php'; ?>

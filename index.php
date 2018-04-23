@@ -6,7 +6,6 @@ include_once($_SERVER['DOCUMENT_ROOT']). '/assets/includes/header.php';
 ?>
 
 <div class="content">
-
 <div class="container">
 <section class="global-wrapper">
 	<div class="row">
@@ -73,8 +72,9 @@ include_once($_SERVER['DOCUMENT_ROOT']). '/assets/includes/header.php';
 			</div>
 		</div>
 	</div>
-</div>
 </section>
+</div>
+</div>
 		
 
 <?php include($_SERVER['DOCUMENT_ROOT']). '/assets/includes/footer.php'; ?>
