@@ -1,7 +1,7 @@
 <?php
 ob_start("ob_gzhandler");
 
-$nom = "Planète-Toad.fr";
+$nom = "Planète Toad";
 ?>
 <!DOCTYPE html>
 <html lang="fr">
