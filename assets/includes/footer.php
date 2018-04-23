@@ -24,7 +24,7 @@
 						<a href="/equipe/">Équipe</a>
 					</li>
 					<li>
-						<a href="/copyright/">Informations légales</a>
+						<a href="/infolegales/">Informations légales</a>
 					</li>
 					<li>
 						<a href="/partenaire/">Devenir partenaire</a>
