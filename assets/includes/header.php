@@ -21,6 +21,8 @@ $nom = "Planète-Toad.fr";
 	  <script src="/assets/js/jquery.min.js" type="text/javascript"></script>
 	  <script src="/assets/js/bootstrap.min.js" type="text/javascript"></script>
 	  <script src="/assets/js/dropdown.js" type="text/javascript"></script>
+	  <?php if ($titre == "Jukebox") {echo '<link href="/jukebox/css/style.css" rel="stylesheet">';}?>
+	  <?php if ($titre == "Jukebox") {echo '<link href="/jukebox/css/plyr.css" rel="stylesheet">';}?>
 	  
    </head>
    <body>
@@ -49,7 +51,7 @@ $nom = "Planète-Toad.fr";
                      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><b class="fa fa-plus" aria-hidden="true"></b> Divers <span class="caret"></span></a>
                      <ul class="dropdown-menu">
                         <?php if ($titre == "Gamebox") {echo '<li class="disabled"><a href="#">';} else {echo '<li><a href="/gamebox/">';} ?><b class="fa fa-gamepad" aria-hidden="true"></b> Gamebox</a></li>
-						<?php if ($titre == "Mini-tchat") {echo '<li class="disabled"><a href="#">';} else {echo '<li><a href="/jukebox/">';} ?><b class="fa fa-music" aria-hidden="true"></b> Jukebox</a></li>
+						<?php if ($titre == "Jukebox") {echo '<li class="disabled"><a href="#">';} else {echo '<li><a href="/jukebox/">';} ?><b class="fa fa-music" aria-hidden="true"></b> Jukebox</a></li>
                       </ul>
                   </li>
 		      </ul>

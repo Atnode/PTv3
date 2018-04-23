@@ -29,7 +29,7 @@ include_once($_SERVER['DOCUMENT_ROOT']). '/assets/includes/header.php';
                     <div class="header-text">
                         <div class="col-md-12 text-center">
                             <h2>
-                            	<span>Nom</strong></span>
+                            	<span class="hidden-xs">Nom</span>
                             </h2>
                             <br>
                             <h3>
@@ -37,7 +37,7 @@ include_once($_SERVER['DOCUMENT_ROOT']). '/assets/includes/header.php';
                             </h3>
                             <br>
                             <div class="">
-                                <a class="btn btn-primary" href="#">Lire l'article</a></div>
+                                <a class="btn btn-primary hidden-xs" href="#">Lire l'article</a></div>
                         </div>
                     </div><!-- /header-text -->
 			    </div>
@@ -47,7 +47,7 @@ include_once($_SERVER['DOCUMENT_ROOT']). '/assets/includes/header.php';
                     <div class="header-text">
                         <div class="col-md-12 text-center">
                             <h2>
-                            	<span>Nom</strong></span>
+                            	<span class="hidden-xs">Nom</span>
                             </h2>
                             <br>
                             <h3>
@@ -55,7 +55,7 @@ include_once($_SERVER['DOCUMENT_ROOT']). '/assets/includes/header.php';
                             </h3>
                             <br>
                             <div class="">
-                                <a class="btn btn-primary" href="#">Lire l'article</a></div>
+                                <a class="btn btn-primary hidden-xs" href="#">Lire l'article</a></div>
 								</div>
                     </div><!-- /header-text -->
 			    </div>
@@ -65,15 +65,15 @@ include_once($_SERVER['DOCUMENT_ROOT']). '/assets/includes/header.php';
                     <div class="header-text">
                         <div class="col-md-12 text-center">
                             <h2>
-                            	<span>Nom</strong></span>
+                            	<span class="hidden-xs">Nom</span>
                             </h2>
                             <br>
                             <h3>
                             	<span>Courte description</span>
                             </h3>
                             <br>
-                            <div class="">
-                                <a class="btn btn-primary" href="#">Lire l'article</a></div>
+                            <div class="hidden-xs">
+                                <a class="btn btn-primary hidden-xs" href="#">Lire l'article</a></div>
 								</div>
                     </div><!-- /header-text -->
 			    </div>
@@ -81,6 +81,7 @@ include_once($_SERVER['DOCUMENT_ROOT']). '/assets/includes/header.php';
 </div>
 		</div><!-- /carousel -->
 	</div>
+
 </div>
 
 

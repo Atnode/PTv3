@@ -18,7 +18,7 @@ body {
 	display: -webkit-flex;
 	flex-direction: column;
 	-webkit-flex-direction: column;
-	padding-top: 65px;
+	padding-top: 64px;
 	font-size: 15px;
 	background: url(/assets/img/background.jpg);
 	background-attachment: fixed;
