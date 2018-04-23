@@ -1,5 +1,17 @@
 <?php
+session_start();
 ob_start("ob_gzhandler");
+
+require_once($_SERVER['DOCUMENT_ROOT']). '/assets/includes/config.php';
+
+try
+	{
+        $sql = new PDO('mysql:host=' . $dbhost . ';dbname=' . $dbname . ';charset=utf8', $dbuser, $dbpass);
+	}
+catch (Exception $e)
+	{
+        die('Erreur: ' . $e->getMessage());
+	}
 
 $nom = "Planète Toad";
 ?>
@@ -64,24 +76,25 @@ $nom = "Planète Toad";
 				<li>
 					 <div class="row">
 							<div class="col-md-12">
-								 <form class="form" role="form" method="post" action="login" accept-charset="UTF-8" id="login-nav">
+								 <form class="form" role="form" accept-charset="UTF-8" id="login-nav">
 										<div class="form-group">
 											 <label class="sr-only" for="pseudo">Pseudo</label>
-											 <input class="form-control" id="pseudo" placeholder="Pseudo" required>
+											 <input class="form-control" id="pseudo" name="pseudo" placeholder="Pseudo" required>
 										</div>
 										<div class="form-group">
 											 <label class="sr-only" for="password">Mot de passe</label>
-											 <input type="password" class="form-control" id="password" placeholder="Mot de passe" required>
+											 <input type="password" class="form-control" id="password" name="password" placeholder="Mot de passe" required>
                                              <div class="help-block text-right"><a href="">Mot de passe oublié ?</a></div>
 										</div>
 										<div class="form-group">
-											 <button type="submit" class="btn btn-primary btn-block">Connexion</button>
+											 <button type="submit" id="connexion" name="connexion" class="btn btn-primary btn-block">Connexion</button>
 										</div>
 										<div class="checkbox">
 											 <label>
 											 <input type="checkbox"> Se souvenir de moi ?
 											 </label>
 										</div>
+										<div id="resultat"></div>
 								 </form>
 							</div>
 					 </div>
@@ -92,4 +105,40 @@ $nom = "Planète Toad";
 		    </div>
 		  </div>
 		</nav>
-		
+			<?php
+			if (!isset($_SESSION['id']))
+			{
+			?>
+			<script>
+				$(document).ready(function() {
+					
+						$("#connexion").click(function(e){
+							e.preventDefault()
+							
+							$.post(
+								'connexion.php',
+								{
+									pseudo : $("#pseudo").val(),
+									password : $("#password").val()
+								},
+								
+								function(data) {
+									if (data == 'true')
+									{
+										$("#resultat").html("<p>Connecté avec succès</p>")
+									}
+									else
+									{
+										$("#resultat").html("<p>Erreur lors de la connexion</p>")
+									}
+								},
+								
+								'text'
+								
+							)
+						})
+					})
+			</script>
+			<?php
+			}
+			?>
