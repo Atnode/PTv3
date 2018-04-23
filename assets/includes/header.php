@@ -53,10 +53,41 @@ $nom = "Planète-Toad.fr";
                       </ul>
                   </li>
 		      </ul>
-		      <ul class="nav navbar-nav navbar-right">		        
-                  <?php if ($titre == "Contact") {echo '<li class="active"><a href="#">';} else {echo '<li><a href="/connexion/">';} ?><b class="fa fa-lock" aria-hidden="true"></b> Connexion</a></li>
-				  <?php if ($titre == "À propos") {echo '<li class="active"><a href="#">';} else {echo '<li><a href="/inscription/">';} ?><b class="fa fa-plus-square" aria-hidden="true"></b> Inscription</a></li>       
+		      <ul class="nav navbar-nav navbar-right">	
+				  <?php if ($titre == "inscription") {echo '<li class="active"><a href="#">';} else {echo '<li><a href="/inscription/">';} ?><b class="fa fa-plus-square" aria-hidden="true"></b> Inscription</a></li>       
+			  
+                  <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown"><b class="fa fa-lock" aria-hidden="true"></b> Connexion <span class="caret"></span></a>
+			<ul id="login" class="dropdown-menu">
+				<li>
+					 <div class="row">
+							<div class="col-md-12">
+								 <form class="form" role="form" method="post" action="login" accept-charset="UTF-8" id="login-nav">
+										<div class="form-group">
+											 <label class="sr-only" for="pseudo">Pseudo</label>
+											 <input class="form-control" id="pseudo" placeholder="Pseudo" required>
+										</div>
+										<div class="form-group">
+											 <label class="sr-only" for="password">Mot de passe</label>
+											 <input type="password" class="form-control" id="password" placeholder="Mot de passe" required>
+                                             <div class="help-block text-right"><a href="">Mot de passe oublié ?</a></div>
+										</div>
+										<div class="form-group">
+											 <button type="submit" class="btn btn-primary btn-block">Connexion</button>
+										</div>
+										<div class="checkbox">
+											 <label>
+											 <input type="checkbox"> Se souvenir de moi ?
+											 </label>
+										</div>
+								 </form>
+							</div>
+					 </div>
+				</li>
+			</ul>
+        </li>
 		      </ul>
 		    </div>
 		  </div>
 		</nav>
+		
