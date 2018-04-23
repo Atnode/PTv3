@@ -16,7 +16,7 @@ if (isset($_POST['connexion']))
 	$query = $sql->prepare('SELECT * FROM forum_membres WHERE membre_pseudo = :pseudo AND membre_mdp = :motdepasse');
 	$query->execute(array(
 			'pseudo' => $_POST['pseudo'],
-			'motdepasse' => crypt('sha512', md5($_POST['motdepasse']))
+			'motdepasse' => crypt('sha512', md5($_POST['password']))
 		));
 		
 	$connexion = $query->fetch();
