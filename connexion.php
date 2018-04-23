@@ -26,10 +26,6 @@ if (isset($_POST['connexion']))
 		echo 'true';
 		//A compléter
 	}
-	else
-	{
-		echo 'error';
-	}
 }
 else
 {
