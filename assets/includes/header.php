@@ -79,11 +79,11 @@ $nom = "Planète Toad";
 								 <form class="form" role="form" accept-charset="UTF-8" id="login-nav">
 										<div class="form-group">
 											 <label class="sr-only" for="pseudo">Pseudo</label>
-											 <input class="form-control" id="pseudo" placeholder="Pseudo" required>
+											 <input class="form-control" id="pseudo" name="pseudo" placeholder="Pseudo" required>
 										</div>
 										<div class="form-group">
 											 <label class="sr-only" for="password">Mot de passe</label>
-											 <input type="password" class="form-control" id="password" placeholder="Mot de passe" required>
+											 <input type="password" class="form-control" id="password" name="password" placeholder="Mot de passe" required>
                                              <div class="help-block text-right"><a href="">Mot de passe oublié ?</a></div>
 										</div>
 										<div class="form-group">
