@@ -35,6 +35,7 @@ $nom = "Planète Toad";
 	  <script src="/assets/js/dropdown.js"></script>
 	  <?php if ($titre == "Jukebox") {echo '<link href="/jukebox/css/style.css" rel="stylesheet">';}?>
 	  <?php if ($titre == "Jukebox") {echo '<link href="/jukebox/css/plyr.css" rel="stylesheet">';}?>
+	  <?php if ($titre == "Gamebox") {echo '<link href="/gamebox/css/style.css" rel="stylesheet">';}?>
 	  
    </head>
    <body>

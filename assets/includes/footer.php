@@ -67,4 +67,5 @@
 <?php if ($titre == "Jukebox") {echo '<script src="/jukebox/js/html5media.min.js"></script>';}?>
 <?php if ($titre == "Jukebox") {echo '<script src="/jukebox/js/plyr.js"></script>';}?>
 <?php if ($titre == "Jukebox") {echo '<script src="/jukebox/js/script.js"></script>';}?>
+<?php if ($titre == "Gamebox") {echo '<script src="/gamebox/js/script.js"></script>';}?>
 </html>
