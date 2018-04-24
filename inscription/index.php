@@ -69,7 +69,7 @@ include_once($_SERVER['DOCUMENT_ROOT']). '/assets/includes/header.php';
 										</div>
 										<div class="col-md-6">
 											<div class="control-group">
-												<label class="control-label" for="password_confirm">Mot de passe (Confirmation)</label>
+												<label class="control-label" for="password_confirm">Mot de passe (confirmation)</label>
 												<div class="controls">
 													<input class="input-xlarge" id="password_confirm" name="password_confirm" placeholder="" type="password">
 													<p class="help-block">Retapez votre mot de passe.</p>
@@ -78,19 +78,26 @@ include_once($_SERVER['DOCUMENT_ROOT']). '/assets/includes/header.php';
 										</div>
 									</div><br>
 									<div class="control-group">
-										<label class="control-label" for="password_confirm">Cochez la case</label>
+										<label class="control-label" for="captcha_confirm">Cochez la case</label>
 										<div class="controls">
 											captcha à mettre en place ici
 											<p class="help-block">Veuillez cochez la case.</p>
 										</div>
-									</div><br>
+									</div>
 									<div class="control-group">
 										<div class="controls">
-											<button class="btn btn-primary">S'inscrire</button>
+											<div class="checkbox">
+												<label><input id="" type="checkbox" value=""> J'accepte les <a href="/cgu/">conditions générales d'utilisation</a>.</label>
+											</div>
 										</div>
 									</div>
 								</fieldset>
 							</form>
+						</div>
+					</div><br>
+					<div class="control-group">
+						<div class="controls">
+							<button class="btn btn-primary">S'inscrire</button>
 						</div>
 					</div>
 				</div>
