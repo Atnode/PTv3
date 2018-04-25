@@ -66,7 +66,7 @@ include_once($_SERVER['DOCUMENT_ROOT']). '/assets/includes/header.php';
 				<li>Merci ccc.
 				</li>
 			</ul>
-		</div><br>
+		</div>
 	</section>
 </div>
 
