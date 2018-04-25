@@ -10,8 +10,8 @@ $data = [
         'title'         => 'Toad Airplane',
         'img'           => 'img/toada.png',
         'description'   => 'Voguer dans les cieux mais gare aux ennemis !',
-        'url'       => 'jeux/toada/index.php',
-    ],
+        'url'       => 'jeux/toada/index.php'
+    ]
 ];
 
 ?>

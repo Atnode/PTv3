@@ -60,7 +60,7 @@ $nom = "Planète Toad";
 						<?php if ($titre == "Mini-tchat") {echo '<li class="disabled"><a href="#">';} else {echo '<li><a href="/mini-tchat">';} ?><b class="fa fa-comments" aria-hidden="true"></b> Mini-tchat</a></li>
                       </ul>
                   </li>
-				<?php if ($titre == "Gamebox" or $titre == "Jukebox") {echo '<li class="active" class="dropdown">';} else {echo '<li class="dropdown">';} ?>
+				<?php if ($titre == "Salle d'arcade" or $titre == "Jukebox") {echo '<li class="active" class="dropdown">';} else {echo '<li class="dropdown">';} ?>
                      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><b class="fa fa-plus" aria-hidden="true"></b> Divers <span class="caret"></span></a>
                      <ul class="dropdown-menu">
                         <?php if ($titre == "Salle d'arcade") {echo '<li class="disabled"><a href="#">';} else {echo '<li><a href="/divers/arcade/">';} ?><b class="fa fa-gamepad" aria-hidden="true"></b> Salle d'arcade</a></li>
