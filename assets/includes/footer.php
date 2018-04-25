@@ -22,9 +22,6 @@
 						<a href="/equipe/">Équipe</a>
 					</li>
 					<li>
-						<a href="/infolegales/">Informations légales</a>
-					</li>
-					<li>
 						<a href="/cgu/">Conditions Générales d'Utilisation</a>
 					</li>
 					<li>
