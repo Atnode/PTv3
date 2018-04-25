@@ -69,7 +69,7 @@ $nom = "Planète Toad";
                   </li>
 		      </ul>
 		      <ul class="nav navbar-nav navbar-right">	
-				  <?php if ($titre == "Inscription") {echo '<li class="active"><a href="#">';} else {echo '<li><a href="/inscription.php">';} ?><b class="fa fa-plus-square" aria-hidden="true"></b> Inscription</a></li>       
+				  <?php if ($titre == "Inscription") {echo '<li class="active"><a href="#">';} else {echo '<li><a href="/inscription/">';} ?><b class="fa fa-plus-square" aria-hidden="true"></b> Inscription</a></li>       
 			  
                   <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown"><b class="fa fa-lock" aria-hidden="true"></b> Connexion <span class="caret"></span></a>

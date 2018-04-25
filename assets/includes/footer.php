@@ -25,6 +25,9 @@
 						<a href="/infolegales/">Informations légales</a>
 					</li>
 					<li>
+						<a href="/cgu/">Conditions Générales d'Utilisation</a>
+					</li>
+					<li>
 						<a href="/partenaire/">Devenir partenaire</a>
 					</li>
 					<li>

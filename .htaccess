@@ -1,0 +1,4 @@
+Options +MultiViews
+RewriteEngine on
+RewriteRule ^/inscription/$ inscription.php [L]
+RewriteRule ^/cgu/$ cgu.php [L]
