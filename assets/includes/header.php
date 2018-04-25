@@ -33,9 +33,9 @@ $nom = "Planète Toad";
 	  <script src="/assets/js/jquery.min.js"></script>
 	  <script src="/assets/js/bootstrap.min.js"></script>
 	  <script src="/assets/js/dropdown.js"></script>
-	  <?php if ($titre == "Jukebox") {echo '<link href="/jukebox/css/style.css" rel="stylesheet">';}?>
-	  <?php if ($titre == "Jukebox") {echo '<link href="/jukebox/css/plyr.css" rel="stylesheet">';}?>
-	  <?php if ($titre == "Gamebox") {echo '<link href="/gamebox/css/style.css" rel="stylesheet">';}?>
+	  <?php if ($titre == "Jukebox") {echo '<link href="/divers/jukebox/css/style.css" rel="stylesheet">';}?>
+	  <?php if ($titre == "Jukebox") {echo '<link href="/divers/jukebox/css/plyr.css" rel="stylesheet">';}?>
+	  <?php if ($titre == "Salle d'arcade") {echo '<link href="/divers/arcade/css/style.css" rel="stylesheet">';}?>
 	  
    </head>
    <body>
@@ -63,13 +63,13 @@ $nom = "Planète Toad";
 				<?php if ($titre == "Gamebox" or $titre == "Jukebox") {echo '<li class="active" class="dropdown">';} else {echo '<li class="dropdown">';} ?>
                      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><b class="fa fa-plus" aria-hidden="true"></b> Divers <span class="caret"></span></a>
                      <ul class="dropdown-menu">
-                        <?php if ($titre == "Gamebox") {echo '<li class="disabled"><a href="#">';} else {echo '<li><a href="/gamebox/">';} ?><b class="fa fa-gamepad" aria-hidden="true"></b> Gamebox</a></li>
-						<?php if ($titre == "Jukebox") {echo '<li class="disabled"><a href="#">';} else {echo '<li><a href="/jukebox/">';} ?><b class="fa fa-music" aria-hidden="true"></b> Jukebox</a></li>
+                        <?php if ($titre == "Salle d'arcade") {echo '<li class="disabled"><a href="#">';} else {echo '<li><a href="/divers/arcade/">';} ?><b class="fa fa-gamepad" aria-hidden="true"></b> Salle d'arcade</a></li>
+						<?php if ($titre == "Jukebox") {echo '<li class="disabled"><a href="#">';} else {echo '<li><a href="/divers/jukebox/">';} ?><b class="fa fa-music" aria-hidden="true"></b> Jukebox</a></li>
                       </ul>
                   </li>
 		      </ul>
 		      <ul class="nav navbar-nav navbar-right">	
-				  <?php if ($titre == "inscription") {echo '<li class="active"><a href="#">';} else {echo '<li><a href="/inscription/">';} ?><b class="fa fa-plus-square" aria-hidden="true"></b> Inscription</a></li>       
+				  <?php if ($titre == "Inscription") {echo '<li class="active"><a href="#">';} else {echo '<li><a href="/inscription.php">';} ?><b class="fa fa-plus-square" aria-hidden="true"></b> Inscription</a></li>       
 			  
                   <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown"><b class="fa fa-lock" aria-hidden="true"></b> Connexion <span class="caret"></span></a>
