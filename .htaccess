@@ -1,4 +1,17 @@
 Options +MultiViews
+
+# Rewriting pour la beauté des URLs
 RewriteEngine on
 RewriteRule ^/inscription/$ inscription.php [L]
 RewriteRule ^/cgu/$ cgu.php [L]
+RewriteRule ^/partenaire/$ partenaire.php [L]
+
+
+# Compatibilité avec PTv2
+Redirect "/images/pt-partenariat.png" "/assets/img/partenaires/pt-partenariat.png"
+Redirect "/musee-jeux.html" "/divers/arcade/"
+Redirect "/musee-music.html" "/divers/jukebox/"
+Redirect "/devenir-partenaire.html" "/partenaire/"
+Redirect "/apropos.html" "/cgu/"
+Redirect "/topic-1-1.html" "/cgu/"
+Redirect "/contact.html" "/contact/"

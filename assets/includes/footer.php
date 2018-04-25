@@ -36,13 +36,10 @@
 				<h5>Partenaires</h5>
 				<ul>
 					<li>
-						<a href="#">aaa</a>
+						<a href="http://smbxcity.forumactif.org/" rel="nofollow" title="SMBX City" target="_blank"><img src="/assets/img/partenaires/SMBXCITY.png" alt="SMBX City Site partrnaire" title="SMBX City" width="88" height="31"></a>
 					</li>
 					<li>
-						<a href="#">bbb</a>
-					</li>
-					<li>
-						<a href="#">ccc</a>
+						<a href="https://mkpc.malahieude.net/" rel="nofollow" title="Mario Kart PC" target="_blank"><img src="/assets/img/partenaires/mkpc.png" alt="Mario Kart PC Site Partenaire" title="Mario Kart PC" width="88" height="31"></a>
 					</li>
 				</ul>
 			</div>
