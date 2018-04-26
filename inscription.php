@@ -14,7 +14,7 @@ if (isset($_POST['inscrire']))
 		$erreur = NULL;
 		
 		//On vérifie si le formulaire a été rempli
-		if (empty($_POST['pseudo'] || $_POST['email'] || $_POST['password'] || $_POST['password_confirm']))
+		if (empty($_POST['pseudo']) || empty($_POST['email']) || empty($_POST['password']) || empty($_POST['password_confirm']))
 		{
 			$champ_vide = "<p>Tu n'as pas rempli tous les champs</p>";
 			$erreur++;
