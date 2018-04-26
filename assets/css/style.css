@@ -294,11 +294,11 @@ a:hover, a:focus {
 	color: #ffffff
 }
 .header-text h2 span {
-	background-color: #2980b9;
+	background-color: #2980b999;
 	padding: 10px;
 }
 .header-text h3 span {
-	background-color: #000;
+	background-color: #00000080;
 	padding: 15px;
 	color: #ffffff
 }
