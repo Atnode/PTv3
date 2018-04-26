@@ -1,22 +1,13 @@
+	</div>
+</div>
+
 <footer id="footer">
 	<div class="container">
 		<div class="row">
 			<div class="col-sm-3">
-				<h5>Navigation</h5>
-				<ul>
-					<li>
-						<a href="#">Accueil</a>
-					</li>
-					<li>
-						<a href="#">Connexion</a>
-					</li>
-					<li>
-						<a href="#">Inscription</a>
-					</li>
-				</ul>
-			</div>
-			<div class="col-sm-3">
-				<h5>À propos</h5>
+				<div class="center">
+					<h5>À propos</h5>
+				</div>
 				<ul>
 					<li>
 						<a href="/equipe/">Équipe</a>
@@ -33,19 +24,26 @@
 				</ul>
 			</div>
 			<div class="col-sm-3">
-				<h5>Partenaires</h5>
-				<ul>
-					<li>
-						<a href="http://smbxcity.forumactif.org/" rel="nofollow" title="SMBX City" target="_blank"><img src="/assets/img/partenaires/SMBXCITY.png" alt="SMBX City Site partrnaire" title="SMBX City" width="88" height="31"></a>
-					</li>
-					<li>
-						<a href="https://mkpc.malahieude.net/" rel="nofollow" title="Mario Kart PC" target="_blank"><img src="/assets/img/partenaires/mkpc.png" alt="Mario Kart PC Site Partenaire" title="Mario Kart PC" width="88" height="31"></a>
-					</li>
-				</ul>
+				<div class="center">
+					<h5>Partenaires</h5>
+				</div>
+				<div class="center">
+					<ul>
+						<li>
+							<a href="http://smbxcity.forumactif.org/" rel="nofollow" target="_blank" title="SMBX City"><img alt="SMBX City Site partrnaire" height="31" src="/assets/img/partenaires/SMBXCITY.png" title="SMBX City" width="88"></a><a href="https://mkpc.malahieude.net/" rel="nofollow" target="_blank" title="Mario Kart PC"><img alt="Mario Kart PC Site Partenaire" height="31" src="/assets/img/partenaires/mkpc.png" title="Mario Kart PC" width="88"></a>
+						</li>
+						<li>
+							<a href="http://www.vanilladome.fr/" rel="nofollow" target="_blank" title="Vanilla Dome"><img alt="Vanilla Dome" height="31" src="/assets/img/partenaires/vdpartenaire.png" title="Vanilla Dome" width="88"></a>
+						</li>
+					</ul>
+				</div>
 			</div>
-			<div class="col-sm-3 stats">
-				<h5>Statistiques</h5>
-				<p>PT è mor</p>
+			<div class="col-sm-6 stats">
+				<div class="center">
+					<h5>Statistiques</h5>
+				</div>
+				<p>PT è mor<br>
+				Yeah BoIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII IIIIIIIIIIIIIIIIIIIIIIIIIII IIIIIIIIIIIIIIIIIIIIIIIII IIIIIIIIIIIIIIIIIIIIIIIIII IIIIIIIIIIIIIIIIIIIIIII</p>
 			</div>
 		</div>
 	</div>
@@ -58,11 +56,10 @@
 		</div>
 	</div>
 </footer>
-
-
 </body>
 <?php if ($titre == "Jukebox") {echo '<script src="/divers/jukebox/js/html5media.min.js"></script>';}?>
 <?php if ($titre == "Jukebox") {echo '<script src="/divers/jukebox/js/plyr.js"></script>';}?>
 <?php if ($titre == "Jukebox") {echo '<script src="/divers/jukebox/js/script.js"></script>';}?>
 <?php if ($titre == "Salle d'arcade") {echo '<script src="/divers/arcade/js/script.js"></script>';}?>
+<?php if ($titre == "Contact") {echo '<script src="/contact/js/form.js"></script>';}?>
 </html>

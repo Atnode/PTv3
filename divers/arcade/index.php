@@ -32,28 +32,21 @@ foreach ($data as $k => $v) {
 $tips .= '
 </ul>';
 ?>
-
-<div class="content">
-	<div class="container">
-		<section class="global-wrapper">
-			<div class="row">
-				<div class="col-lg-12">
-					<ol class="breadcrumb">
-						<li>
-							<a href="/"><?php echo "$nom" ?></a>
-						</li>
-						<li>Divers</li>
-						<li class="active"><strong><?php echo "$titre" ?></strong></li>
-					</ol>
-				</div>
-			</div>
-			<div class="container">
-				<main>
-					<?php echo $tips; ?>
-				</main>
-			</div>
-		</section>
+<div class="row">
+	<div class="col-lg-12">
+		<ol class="breadcrumb">
+			<li>
+				<a href="/"><?php echo "$nom" ?></a>
+			</li>
+			<li>Divers</li>
+			<li class="active"><strong><?php echo "$titre" ?></strong></li>
+		</ol>
 	</div>
+</div>
+<div class="container">
+	<main>
+		<?php echo $tips; ?>
+	</main>
 </div>
 	
 <?php include($_SERVER['DOCUMENT_ROOT']). '/assets/includes/footer.php'; ?>

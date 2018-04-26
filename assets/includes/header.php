@@ -143,3 +143,6 @@ $nom = "Planète Toad";
 			<?php
 			}
 			?>
+			
+<div class="container">
+	<div class="jumbotron">
