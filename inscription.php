@@ -87,7 +87,9 @@ if (isset($_POST['inscrire']))
 		//Si nous n'avons aucune erreur, nous pouvons continuer à traiter
 		if ($erreur == 0)
 		{
-			$query = $sql->prepare('INSERT INTO forum_membres(membre_pseudo, membre_mdp, membre_email, membre_avatar, membre_inscrit, membre_derniere_visite, membre_couleur, membre_rang) VALUES(:pseudo, :motdepasse, :email, :avatar, :inscrit, :derniere_visite, :couleur, :rang)');
+		if ($erreur == 0)
+		{
+			$query = $sql->prepare('INSERT INTO forum_membres(membre_pseudo, membre_mdp, membre_email, membre_avatar, membre_inscrit, membre_derniere_visite, membre_couleur, membre_rang, ip) VALUES(:pseudo, :motdepasse, :email, :avatar, :inscrit, :derniere_visite, :couleur, :rang, :ip)');
 			$query->execute(array(
 				'pseudo' => htmlspecialchars($_POST['pseudo']),
 				'motdepasse' => crypt('sha512', md5($_POST['password'])),
@@ -96,7 +98,8 @@ if (isset($_POST['inscrire']))
 				'inscrit' => time(),
 				'derniere_visite' => time(),
 				'couleur' => 'black',
-				'rang' => 2
+				'rang' => '2',
+				'ip' => $_SERVER['REMOTE_ADDR'],
 			));
 			
 			$_SESSION['pseudo'] = $_POST['pseudo'];
