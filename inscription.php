@@ -141,7 +141,7 @@ if (isset($_POST['inscrire']))
 					<div class="row">
 						<div class="col-md-10 col-md-offset-1">
 							<?php
-							if (isset($valide) && !$valide)
+							if (!isset($valide))
 							{
 							?>
 							<form class="form-horizontal" method="post" action="inscription.php">
