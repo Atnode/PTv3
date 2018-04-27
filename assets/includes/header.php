@@ -146,3 +146,14 @@ $nom = "Planète Toad";
 			
 <div class="container">
 	<div class="jumbotron">
+	
+<?php if ($titre != "Accueil") {echo '<div class="row">
+	<div class="col-lg-12">
+		<ol class="breadcrumb">
+			<li>
+				<a href="/">'. $nom .'</a>
+			</li>
+			<li class="active"><strong>'. $titre .'</strong></li>
+		</ol>
+	</div>
+</div>';}?>

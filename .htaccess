@@ -1,10 +1,16 @@
 Options +MultiViews
+RewriteEngine on
 
 # Rewriting pour la beauté des URLs
 RewriteEngine on
 RewriteRule ^/inscription/$ inscription.php [L]
 RewriteRule ^/cgu/$ cgu.php [L]
 RewriteRule ^/partenaire/$ partenaire.php [L]
+RewriteRule ^/erreur/pardon/$ erreur.php?error=abandonned [L]
+
+# Erreurs
+ErrorDocument 403 /erreur.php?erreur=403
+ErrorDocument 404 /erreur.php?erreur=404
 
 
 # Compatibilité avec PTv2

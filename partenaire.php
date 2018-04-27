@@ -5,16 +5,6 @@ $description = "Envie de devenir un partenaire de ce magnifique site ?";
 include_once($_SERVER['DOCUMENT_ROOT']). '/assets/includes/header.php';
 ?>
 
-<div class="row">
-	<div class="col-lg-12">
-		<ol class="breadcrumb">
-			<li>
-				<a href="/"><?php echo "$nom" ?></a>
-			</li>
-			<li class="active"><strong><?php echo "$titre" ?></strong></li>
-		</ol>
-	</div>
-</div>
 <div class="container">
 	<h2><b class="fa fa-book"></b> Conditions</h2>
 	<p><b>Planète Toad</b> est un site web francophone d'activité moyenne, certaines conditions sont requises afin d'accepter ou non votre site/forum/blog en tant que partenaire.</p>

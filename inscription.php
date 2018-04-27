@@ -110,16 +110,6 @@ if (isset($_POST['inscrire']))
 
 ?>
 
-<div class="row">
-	<div class="col-lg-12">
-		<ol class="breadcrumb">
-			<li>
-				<a href="/"><?php echo "$nom" ?></a>
-			</li>
-			<li class="active"><strong><?php echo "$titre" ?></strong></li>
-		</ol>
-	</div>
-</div>
 <div class="container">
 	<div class="col-md-12">
 		<div class="row">

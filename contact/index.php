@@ -5,16 +5,6 @@ $description = "Contacter le webmestre de Planète Toad.";
 include_once($_SERVER['DOCUMENT_ROOT']). '/assets/includes/header.php';
 ?>
 
-<div class="row">
-	<div class="col-lg-12">
-		<ol class="breadcrumb">
-			<li>
-				<a href="/"><?php echo "$nom" ?></a>
-			</li>
-			<li class="active"><strong><?php echo "$titre" ?></strong></li>
-		</ol>
-	</div>
-</div>
 <div class="container">
 	<div class="form-group">
 		<div class="alert alert-success" id="success_message" style="display:none;">

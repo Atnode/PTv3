@@ -5,16 +5,6 @@ $description = "Information et règles à propos de ce site.";
 include_once($_SERVER['DOCUMENT_ROOT']). '/assets/includes/header.php';
 ?>
 
-<div class="row">
-	<div class="col-lg-12">
-		<ol class="breadcrumb">
-			<li>
-				<a href="/"><?php echo "$nom" ?></a>
-			</li>
-			<li class="active"><strong><?php echo "$titre" ?></strong></li>
-		</ol>
-	</div>
-</div>
 <div class="container">
 	<h2><b class="fa fa-globe"></b> Ce site</h2>
 	<p>Planète Toad dénommé PT est un fansite crée le 30 Juillet 2014 par Champoad et Toaddle ayant pour thématique Mario et son univers. Il a été crée afin de réunir des fans de cette thématique pour qu'ils se rencontrent et partagent leurs idées.<br>
