@@ -24,7 +24,13 @@ if (isset($_POST['connexion']))
 	if ($connexion)
 	{
 		echo 'true';
-		//A compléter
+		session_start();
+		$_SESSION['id'] = $connexion['membre_id'];
+		$_SESSION['pseudo'] = $connexion['membre_pseudo'];
+		$_SESSION['motdepasse'] = $connexion['membre_mdp'];
+		$_SESSION['jeton'] = uniqid(rand(), true);
+		$_SESSION['rang'] = $connexion['membre_rang'];
+		header( "Location: /");
 	}
 }
 else
