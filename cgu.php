@@ -21,24 +21,27 @@ include_once($_SERVER['DOCUMENT_ROOT']). '/assets/includes/header.php';
 	</ul>
 	<br>
 	<h4>Les publications, les commentaires et le profil utilisateur</h4>
+	<ul>
 	<li> Pour répondre à une publication, préférez commentez celle-ci grâce aux commentaires plutôt que poster une autre publication.</li><br>
 	<li> Pour discuter avec un utilisateur en continu, il est recommandé d'utiliser la messagerie privée et le mini-chat, et d'éviter d'utiliser le système de commentaires d'une publication pour faire cela.</li><br>
 	<li> L'adresse email que vous utilisez sur le site doit être valide, il servira à l'équipe pour vous envoyer des notifications et des informations importantes concernant le site.</li><br>
 	Si cette-dernière n'est pas valide, votre compte peut être supprimé dans un délai d'un mois après sa création ou son changement d'email.</li><br>
 	<li> Tout compte utilisateur pouvant être considéré comme spam peut être banni ou supprimé sans péavis.</li><br>
-	<br>
+	</ul><br>
 	
 	<h4>Le mini-chat</h4>
+	<ul>
 	<li> La pub est assez mal vue sauf accord d'un membre de l'équipe.</li><br>
 	<li> Tout ce qui peut être jugé comme un abus sur le mini-chat peut être sanctionné par l'équipe.</li><br>
-	<br>
+	</ul><br>
 	
 	<h4>Le Forum</h4>
+	<ul>
 	<li> Sur le forum de Planète Toad, les doubles et triples post ne sont pas acceptés. Veuillez donc éditer votre post.</li><br>
 	<li> Les topics/sujets "Hors Sujets" (="HS") sur le forum seront soit déplacés dans la catégorie adéquate, soit verrouillés, soit supprimés définitivement.</li><br>
 	<li> La présentation sur le forum n'est pas obligatoire mais est néanmoins appréciée.</li><br>
 	<li> Un laps de temps d'attente obligatoire entre chaque message que vous postez a été mis en place afin de faire face à un éventuel spam, il est de aa minutes pour les sujets et de b minutes pour les réponses.</li><br>
-	<br>
+	</ul><br>
 	<h2><b class="fa fa-th-large"></b> Crédits :</h2>
 	<ul>
 		<li>
