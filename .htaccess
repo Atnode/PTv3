@@ -6,7 +6,7 @@ RewriteEngine on
 RewriteRule ^/inscription/$ inscription.php [L]
 RewriteRule ^/cgu/$ cgu.php [L]
 RewriteRule ^/partenaire/$ partenaire.php [L]
-RewriteRule ^/erreur/pardon/$ erreur.php?error=abandonned [L]
+RewriteRule ^/deconnexion/$ deconnexion.php [L]
 
 # Erreurs
 ErrorDocument 403 /erreur.php?erreur=403
