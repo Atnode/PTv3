@@ -231,7 +231,7 @@ if (isset($_POST['inscrire']))
 			                    }
 			                    if (isset($valide) && $valide)
 			                    {
-			                        echo '<p>Bienvenue sur Planète Toad ' . $_POST['pseudo'] . '</p>';
+			                        echo '<p>Bienvenue sur Planète Toad <b>' . $_POST['pseudo'] . '</b></p>';
 			                    }
 			                    ?>
 		</div>
