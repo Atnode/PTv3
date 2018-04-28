@@ -39,7 +39,9 @@ $nom = "Planète Toad";
 	  
    </head>
    <body>
-	   <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+  <?php if (isset($_SESSION['id']))
+{
+echo '<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
          <div class="container">
             <div class="navbar-header">
                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-brand-centered">
@@ -52,26 +54,99 @@ $nom = "Planète Toad";
 		    </div>
 		    <div class="collapse navbar-collapse" id="navbar-brand-centered">
 		      <ul class="nav navbar-nav">
-		        <?php if ($titre == "Accueil") {echo '<li class="active"><a href="#">';} else {echo '<li><a href="/">';} ?><b class="fa fa-home" aria-hidden="true"></b> Accueil</a></li>
-				<?php if ($titre == "Forum" or $titre == "Mini-tchat") {echo '<li class="active" class="dropdown">';} else {echo '<li class="dropdown">';} ?>
-                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><b class="fa fa-users" aria-hidden="true"></b> Communauté <span class="caret"></span></a>
-                     <ul class="dropdown-menu">
-                        <?php if ($titre == "Forum") {echo '<li class="disabled"><a href="#">';} else {echo '<li><a href="/forum/">';} ?><b class="fa fa-comment-alt" aria-hidden="true"></b> Forum</a></li>
-						<?php if ($titre == "Mini-tchat") {echo '<li class="disabled"><a href="#">';} else {echo '<li><a href="/mini-tchat">';} ?><b class="fa fa-comments" aria-hidden="true"></b> Mini-tchat</a></li>
-                      </ul>
-                  </li>
-				<?php if ($titre == "Salle d'arcade" or $titre == "Jukebox") {echo '<li class="active" class="dropdown">';} else {echo '<li class="dropdown">';} ?>
-                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><b class="fa fa-plus" aria-hidden="true"></b> Divers <span class="caret"></span></a>
-                     <ul class="dropdown-menu">
-                        <?php if ($titre == "Salle d'arcade") {echo '<li class="disabled"><a href="#">';} else {echo '<li><a href="/divers/arcade/">';} ?><b class="fa fa-gamepad" aria-hidden="true"></b> Salle d'arcade</a></li>
-						<?php if ($titre == "Jukebox") {echo '<li class="disabled"><a href="#">';} else {echo '<li><a href="/divers/jukebox/">';} ?><b class="fa fa-music" aria-hidden="true"></b> Jukebox</a></li>
-                      </ul>
-                  </li>
+			 '.(($titre == "Accueil")?'<li class="active"><a href="#">':'<li><a href="/">').'<b class="fa fa-home" aria-hidden="true"></b> Accueil</a></li>
+			 '.(($titre == "Forum" or $titre == "Mini-tchat")?'<li class="active" class="dropdown">':'<li class="dropdown">').'
+			 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><b class="fa fa-users" aria-hidden="true"></b> Communauté <span class="caret"></span></a>
+			 <ul class="dropdown-menu">
+			 '.(($titre == "Forum")?'<li class="disabled"><a href="#">':'<li><a href="/forum/">').'<b class="fa fa-comment-alt" aria-hidden="true"></b> Forum</a></li>
+			 '.(($titre == "Mini-tchat")?'<li class="disabled"><a href="#">':'<li><a href="/mini-tchat">').'<b class="fa fa-comments" aria-hidden="true"></b> Mini-tchat</a></li>
+			 </ul>
+			 </li>
+			 '.(($titre == "Salle d'arcade" or $titre == "Jukebox")?'<li class="active" class="dropdown">':'<li class="dropdown">').'
+			 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><b class="fa fa-plus" aria-hidden="true"></b> Divers <span class="caret"></span></a>
+			 <ul class="dropdown-menu">
+			 '.(($titre == "Salle d'arcade")?'<li class="disabled"><a href="#">':'<li><a href="/divers/arcade/">').'<b class="fa fa-gamepad" aria-hidden="true"></b> Salle d\'arcade</a></li>
+			 '.(($titre == "Jukebox")?'<li class="disabled"><a href="#">':'<li><a href="/divers/jukebox/">').'<b class="fa fa-music" aria-hidden="true"></b> Jukebox</a></li>
+			 </ul>
+			 </li>
+			 </ul>
+			 
+			 <ul class="nav navbar-nav navbar-right">
+			 '.(($titre == "Messagerie")?'<li class="active" class="dropdown">':'<li class="dropdown">').'
+			 <li class="dropdown">
+			 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><b class="fa fa-envelope" aria-hidden="true"></b> <span class="badge">0</span> <span class="caret"></span></a>
+			<ul id="login" class="dropdown-menu">
+				<li>
+					 <div class="row">
+							<div class="col-md-12">
+								<div class="center"><p>Conversations récentes</p></div>
+									<div class="row">
+										<div class="col-lg-3">
+											<img src="/assets/img/avatars/default.png" title="Toad" alt="Toad" style="width:50px;float:left;">
+										</div>
+										<div class="col-lg-9"><img src="/assets/img/online.png" title="Hors ligne" alt="Hors ligne" width="10px;" height="10px">&nbsp;&nbsp;<span style="font-weight: bold ; color:#000;">Toad</span> (nbr msg attente)</div>
+								</div>
+								<span class="divider"></span>
+								<div class="row">
+									<div class="col-lg-3">
+										<img src="/assets/img/avatars/default.png" title="Toad" alt="Toad" style="width:50px;float:left;">
+									</div>
+									<div class="col-lg-9"><img src="/assets/img/online.png" title="Hors ligne" alt="Hors ligne" width="10px;" height="10px">&nbsp;&nbsp;<span style="font-weight: bold ; color:#000;">Toad</span> (nbr msg attente)</div>
+								</div>
+							</div>
+					 </div>
+				</li>
+			</ul>
+        </li>
+			 '.(($titre == "Notifications")?'<li class="disabled"><a href="#">':'<li><a href="/notifications/">').'<b class="fa fa-bell" aria-hidden="true"></b> <span class="badge">0</span></a></li>
+			 '.(($titre == "Paramètres")?'<li class="active" class="dropdown">':'<li class="dropdown">').'
+			 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">[AVATAR] Bienvenue [PSEUDO] <span class="caret"></span></a>
+			 <ul class="dropdown-menu">
+			 '.(($titre == "Mon profil")?'<li class="disabled"><a href="#">':'<li><a href="/monprofil/">').'<b class="fa fa-user" aria-hidden="true"></b> Voir mon profil</a></li>
+			 '.(($titre == "Liste d'amis")?'<li class="disabled"><a href="#">':'<li><a href="/amis/">').'<b class="fa fa-heart" aria-hidden="true"></b> Gérer ma liste d’amis</a></li>
+			 '.(($titre == "Paramères de mon compte")?'<li class="disabled"><a href="#">':'<li><a href="/parametres/">').'<b class="fa fa-cog" aria-hidden="true"></b> Modifier mon compte</a></li>
+			 '.(($titre == "Déconnexion")?'<li class="disabled"><a href="#">':'<li><a href="/deconnexion/">').'<b class="fa fa-sign-out-alt" aria-hidden="true"></b> Déconnexion</a></li>
+			 </ul>
+			 </li>
 		      </ul>
-		      <ul class="nav navbar-nav navbar-right">	
-				  <?php if ($titre == "Inscription") {echo '<li class="active"><a href="#">';} else {echo '<li><a href="/inscription/">';} ?><b class="fa fa-plus-square" aria-hidden="true"></b> Inscription</a></li>       
-			  
-                  <li class="dropdown">
+		    </div>
+		  </div>
+		</nav>'
+;}
+else
+{
+echo '<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+         <div class="container">
+            <div class="navbar-header">
+               <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-brand-centered">
+		        <span class="sr-only">Toggle navigation</span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		      </button>
+               <a class="navbar-brand navbar-brand-centered" href="#"><img src="/assets/img/logopt.png" alt="Logo"></img></a>
+		    </div>
+		    <div class="collapse navbar-collapse" id="navbar-brand-centered">
+		      <ul class="nav navbar-nav">
+			 '.(($titre == "Accueil")?'<li class="active"><a href="#">':'<li><a href="/">').'<b class="fa fa-home" aria-hidden="true"></b> Accueil</a></li>
+			 '.(($titre == "Forum" or $titre == "Mini-tchat")?'<li class="active" class="dropdown">':'<li class="dropdown">').'
+			 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><b class="fa fa-users" aria-hidden="true"></b> Communauté <span class="caret"></span></a>
+			 <ul class="dropdown-menu">
+			 '.(($titre == "Forum")?'<li class="disabled"><a href="#">':'<li><a href="/forum/">').'<b class="fa fa-comment-alt" aria-hidden="true"></b> Forum</a></li>
+			 '.(($titre == "Mini-tchat")?'<li class="disabled"><a href="#">':'<li><a href="/mini-tchat">').'<b class="fa fa-comments" aria-hidden="true"></b> Mini-tchat</a></li>
+			 </ul>
+			 </li>
+			 '.(($titre == "Salle d'arcade" or $titre == "Jukebox")?'<li class="active" class="dropdown">':'<li class="dropdown">').'
+			 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><b class="fa fa-plus" aria-hidden="true"></b> Divers <span class="caret"></span></a>
+			 <ul class="dropdown-menu">
+			 '.(($titre == "Salle d'arcade")?'<li class="disabled"><a href="#">':'<li><a href="/divers/arcade/">').'<b class="fa fa-gamepad" aria-hidden="true"></b> Salle d\'arcade</a></li>
+			 '.(($titre == "Jukebox")?'<li class="disabled"><a href="#">':'<li><a href="/divers/jukebox/">').'<b class="fa fa-music" aria-hidden="true"></b> Jukebox</a></li>
+			 </ul>
+			 </li>
+			 </ul>
+			 <ul class="nav navbar-nav navbar-right">
+			 '.(($titre == "Inscription")?'<li class="active"><a href="#">':'<li><a href="/inscription/">').'<b class="fa fa-plus-square" aria-hidden="true"></b> Inscription</a></li>
+			  <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown"><b class="fa fa-lock" aria-hidden="true"></b> Connexion <span class="caret"></span></a>
 			<ul id="login" class="dropdown-menu">
 				<li>
@@ -105,11 +180,8 @@ $nom = "Planète Toad";
 		      </ul>
 		    </div>
 		  </div>
-		</nav>
-			<?php
-			if (!isset($_SESSION['id']))
-			{
-			?>
+		</nav>';} ?>
+	  
 			<script>
 				$(document).ready(function() {
 					
@@ -140,9 +212,7 @@ $nom = "Planète Toad";
 						})
 					})
 			</script>
-			<?php
-			}
-			?>
+	
 			
 <div class="container">
 	<div class="jumbotron">
